@@ -38,7 +38,7 @@ def using_generator(limit):
             yield i
 
 def using_ranges(limit):
-    return sum(set(range(3,limit,3) + range(5,limit,5)))
+    return sum(set(range(0,limit,3) + range(0,limit,5)))
 
 def main():
     limit = 1000  
