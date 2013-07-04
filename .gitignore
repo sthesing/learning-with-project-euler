@@ -33,3 +33,10 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Geany
+*.geany
+
+# learning-with-project-euler
+*~
+
