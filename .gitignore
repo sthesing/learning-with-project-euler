@@ -1,6 +1,10 @@
 # Java
 *.class
 
+# Binaries in subfolders "bin"
+*/bin/
+
+
 # Python stuff
 *.py[cod]
 
