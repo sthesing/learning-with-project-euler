@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  Multiples_of_3_and_5.py
+#  problem001.py
 #  
 #  Copyright 2013 Stefan Thesing <software@webdings.de>
 #  

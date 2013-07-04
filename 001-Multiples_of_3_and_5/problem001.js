@@ -1,5 +1,5 @@
 /*
- * Multiples_of_3_and_5.js
+ * problem001.js
  * 
  * Copyright 2013 Stefan Thesing <software@webdings.de>
  * License: WTFPL
@@ -20,15 +20,28 @@
  */
 
 var using_for_loop = function (limit) {
-	var sum = 0;
-	for (var number = 1; number < limit; number++) {
-		if (number % 3 === 0 ) {
-			sum = sum + number;
-		} else if (number % 5 === 0) {
-			sum = sum + number;
-		}
-	}
-	return sum;
+    var sum = 0;
+    for (var number = 1; number < limit; number++) {
+        if ((number % 3 === 0 ) || (number % 5 === 0)){
+            sum = sum + number;
+        }
+    }
+    return sum;
+};
+
+var using_recursion = function (args) {
+    var limit = arguments[0];
+    var number = arguments[1] || 1 ;
+    var sum = arguments[2] || 0;
+    if ((number % 3 === 0) || (number % 5 === 0)) {
+        sum = sum + number;
+    }
+    if (number >= limit) {
+        return sum;
+    } else {
+        return using_recursion(limit, number+1, sum);
+    }
 };
 
 console.log(using_for_loop(1000));
+console.log(using_recursion(1000));
