@@ -1,4 +1,4 @@
-/*
+ /*
  * problem001.js
  * 
  * Copyright 2013 Stefan Thesing <software@webdings.de>
