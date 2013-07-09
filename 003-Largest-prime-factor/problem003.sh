@@ -19,8 +19,3 @@
 #  
 
 factor 600851475143 | awk '{print $NF}'
-
-
-
-
-factor 14 | awk '{print $NF}'
