@@ -19,17 +19,14 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
 def main():
     # We're supposed to find the largest palindrome number that is a product of
     # two 3-digit numbers. Therefore, it must be smaller than 999*999 = 998001.
     # The next smallest palindrome number is 997799. That's where we start.
-    
     number = 997799
     while not (is_product_of_two_3_digit_numbers(number)):
         number = find_next_palindrome_number(number)
     print number
-    
     
 def is_product_of_two_3_digit_numbers(number):
     for divisor in range(999,100,-1):
