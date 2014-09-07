@@ -2,7 +2,7 @@
  * Problem001.vala
  * 
  * Copyright 2013 Stefan Thesing <software@webdings.de>
- * 
+ * License: WTFPL
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
