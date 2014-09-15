@@ -24,7 +24,7 @@ class Problem002 : GLib.Object {
   
     static int[] make_next_fibonacci_pair(int number1 = 1, int number2 =2)
     {      
-	    return new int[]{number2, number2+number1};
+        return new int[]{number2, number2+number1};
     }
     
     /* Using a while loop */
@@ -47,7 +47,7 @@ class Problem002 : GLib.Object {
         /* When the limit is reached, return the result. */
         return sum;
     }
-	    
+        
     public static void main (string[] args) {
         stdout.printf(@"$(using_while_loop(4000000))\n");
     }

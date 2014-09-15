@@ -20,25 +20,25 @@
  */
 
 var largestPrimeFactor = function (number) {
-	/* We start with 2 */	
-	var i =  2;
-	/* Oh, and for numbers smaller than 2, we don't even start! */
-	while (number > 1) {
-		/* While the number is divisible by our current prime factor, we 
-		 * keep on dividing it */
-		while (number % i === 0) {
-			number = number / i;
-		}
-		/* No more divisions? Why? Have we reached 1, already? If so, we're 
-		 * done */
-		if (number === 1) {
-			return i;
-		}
-		/* Haven't reached one, yet, huh? Well let's increment the divisor and
-		 * continue. We'll hit bottom soon enough. Whatever is i when we reach
-		 * 1, is the largest prime factor. */
-		i++;
-	}
+    /* We start with 2 */   
+    var i =  2;
+    /* Oh, and for numbers smaller than 2, we don't even start! */
+    while (number > 1) {
+        /* While the number is divisible by our current prime factor, we 
+         * keep on dividing it */
+        while (number % i === 0) {
+            number = number / i;
+        }
+        /* No more divisions? Why? Have we reached 1, already? If so, we're 
+         * done */
+        if (number === 1) {
+            return i;
+        }
+        /* Haven't reached one, yet, huh? Well let's increment the divisor and
+         * continue. We'll hit bottom soon enough. Whatever is i when we reach
+         * 1, is the largest prime factor. */
+        i++;
+    }
 };
 
 console.log(largestPrimeFactor(600851475143));

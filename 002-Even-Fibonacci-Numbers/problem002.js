@@ -35,7 +35,7 @@ var using_while_loop = function () {
          * fibonacci sequence that doesn't start with 1, you'll have to change 
          * this code. */
         if (pair[1] % 2 === 0) {
-			/* Sum it up. */
+            /* Sum it up. */
             sum = sum + pair[1];
         }
         /* Make the next pair and continue. */
@@ -47,25 +47,25 @@ var using_while_loop = function () {
 
 /* Using recursion */
 var using_recursion = function (args) {
-	/* Passed arguments or default values */
-	pair 	= arguments[0] || [1,2];
-	sum     = arguments[1] || 0;
-	/* If the second number exceeds the limit, we're done. Return the result. */
-	if(pair[1] > limit) {
-		return sum;
-	} else {
-		/* Still work to do? Alright...
-		 * Let's add the second number to the sum, if it's even.
-		 * Please note: The very first number (1 in our case) is not checked.
+    /* Passed arguments or default values */
+    pair    = arguments[0] || [1,2];
+    sum     = arguments[1] || 0;
+    /* If the second number exceeds the limit, we're done. Return the result. */
+    if(pair[1] > limit) {
+        return sum;
+    } else {
+        /* Still work to do? Alright...
+         * Let's add the second number to the sum, if it's even.
+         * Please note: The very first number (1 in our case) is not checked.
          * If you want to use this for summing up the even numbers in a 
          * fibonacci sequence that doesn't start with 1, you'll have to change 
          * this code. */
-		if (pair[1] % 2 === 0) {
-			sum = sum + pair[1];
-		}
-		/* Continue the recursion with the next pair and the updated sum. */
-		return using_recursion(make_next_fibonacci_pair(pair[0], pair[1]), sum);
-	}
+        if (pair[1] % 2 === 0) {
+            sum = sum + pair[1];
+        }
+        /* Continue the recursion with the next pair and the updated sum. */
+        return using_recursion(make_next_fibonacci_pair(pair[0], pair[1]), sum);
+    }
 };
 
 var make_next_fibonacci_pair = function (summand1, summand2) {
