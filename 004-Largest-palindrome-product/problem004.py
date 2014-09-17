@@ -21,7 +21,7 @@
 
 def main():
     # We're supposed to find the largest palindrome number that is a product of
-    # two 3-digit numbers. Therefore, it must be smaller than 999*999 = 998001.
+    # two 3-digit numbers. Therefore, it cannot be larger than than 999*999 = 998001.
     # The next smallest palindrome number is 997799. That's where we start.
     number = 997799
     while not (is_product_of_two_3_digit_numbers(number)):
