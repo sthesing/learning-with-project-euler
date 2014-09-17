@@ -19,6 +19,11 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
+# A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+#
+# Find the largest palindrome made from the product of two 3-digit numbers.
+
 def main():
     # We're supposed to find the largest palindrome number that is a product of
     # two 3-digit numbers. Therefore, it cannot be larger than than 999*999 = 998001.

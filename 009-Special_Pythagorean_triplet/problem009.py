@@ -46,13 +46,14 @@ def collect_candidates():
     for a in range(1,1000):
         for b in range(a+1,1000):
             if((1000*a + 1000*b) == (500000 + a*b)):
-                #d = [a,b]
                 candidates.append(a)
                 candidates.append(b)
-    #print len(candidates)
     c = 1000 - candidates[0] - candidates[1]
     candidates.append(c)
-    print candidates[0]*candidates[1]*candidates[2]
+    print "a: " + str(candidates[0])
+    print "b: " + str(candidates[1])
+    print "c: " + str(candidates[2])
+    print "a*b*c: " + str(candidates[0]*candidates[1]*candidates[2])
 
 def main():
     collect_candidates()

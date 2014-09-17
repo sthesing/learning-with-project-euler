@@ -19,6 +19,14 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
+# 2520 is the smallest number that can be divided by each of the numbers from 
+# 1 to 10 without any remainder.
+#
+# What is the smallest positive number that is evenly divisible by all of the 
+# numbers from 1 to 20?
+
+
 def main():
     print smallest_multiple(1,20)
 

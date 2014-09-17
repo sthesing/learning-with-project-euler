@@ -19,6 +19,11 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see 
+# that the 6th prime is 13.
+#
+# What is the 10 001st prime number?
+
 def is_prime(number, list_of_primes):
     for i in list_of_primes:
         # If the number is evenly divisibly by one of the primes we found

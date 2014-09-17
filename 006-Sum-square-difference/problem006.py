@@ -19,6 +19,11 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
+############################################
+# https://projecteuler.net/problem=6
+############################################
+
 def main():
     number = 100
     print sum_square_difference(number)
