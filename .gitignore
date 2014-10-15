@@ -19,5 +19,5 @@ pip-log.txt
 *~
 
 # Dylan build folder
-*/_build/
+*/_build/*
 
