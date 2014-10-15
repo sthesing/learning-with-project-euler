@@ -31,19 +31,14 @@
 ;        [(= i n) sum]
 ;        [(zero? (modulo i 3)) (find-multiples-35 (+ i 1) (+ i sum) n)]
 ;        [(zero? (modulo i 5)) (find-multiples-35 (+ i 1) (+ i sum) n)]
-;        [else (find-multiples-35 (+ i 1) sum n)]
-;      )
-;    )
-;)
+;        [else (find-multiples-35 (+ i 1) sum n)])))
 
 (define (find-multiples-35 i sum n)
       (cond
         [(= i n) sum]
         [(zero? (modulo i 3)) (find-multiples-35 (+ i 1) (+ i sum) n)]
         [(zero? (modulo i 5)) (find-multiples-35 (+ i 1) (+ i sum) n)]
-        [else (find-multiples-35 (+ i 1) sum n)]
-      )
-)
+        [else (find-multiples-35 (+ i 1) sum n)]))
 
 (display (find-multiples-35 1 0 1000))
 (newline)

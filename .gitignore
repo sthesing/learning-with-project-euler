@@ -18,3 +18,6 @@ pip-log.txt
 # learning-with-project-euler
 *~
 
+# Dylan build folder
+*/_build/
+
