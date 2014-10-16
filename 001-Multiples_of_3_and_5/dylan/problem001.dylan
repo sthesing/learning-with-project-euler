@@ -43,7 +43,7 @@ end method;
 
 // Let's try something more general and more fuctional
 define method sum-multiples-of-two-numbers(number1 :: <integer>, number2 :: <integer>, limit :: <integer>) => (sum :: <integer>)
-  reduce(method(x, y) x + y end, 0, union(range(from: number1, to: (limit - 1), by: number1), range(from: number2, to: (limit - 1), by: number2)));
+  reduce(\+, 0, union(range(from: number1, to: (limit - 1), by: number1), range(from: number2, to: (limit - 1), by: number2)));
   //Same code, but slightly better to read:
   /*
   let r = range(from: number1, to: (limit - 1), by: number1);
