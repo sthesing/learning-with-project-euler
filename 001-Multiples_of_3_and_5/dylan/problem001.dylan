@@ -25,17 +25,31 @@ Copyright: (c) 2014; License: WTFPL
  Find the sum of all the multiples of 3 or 5 below 1000.*/
 
 define function main (name :: <string>, arguments :: <vector>)
+  format-out("Recursively counting up to the limit, using modulo:\n");
   format-out("%d\n", sum-multiples-of-3-5(1,0,1000));
+  format-out("Using ranges:\n");
+  format-out("%d\n", sum-multiples-of-two-numbers(3, 5, 1000));
   exit-application(0);
 end function main;
 
-define method sum-multiples-of-3-5 (i :: <integer>, sum :: <integer>, n :: <integer>) => (sum :: <integer>)
+define method sum-multiples-of-3-5 (i :: <integer>, sum :: <integer>, limit :: <integer>) => (sum :: <integer>)
   case
-    (i = n) => sum;
-    (modulo(i, 3) = 0) => sum-multiples-of-3-5((i + 1), (i + sum), n);
-    (modulo(i, 5) = 0) => sum-multiples-of-3-5((i + 1), (i + sum), n);
-    otherwise => sum-multiples-of-3-5((i + 1), sum, n);
+    (i = limit) => sum;
+    (modulo(i, 3) = 0) => sum-multiples-of-3-5((i + 1), (i + sum), limit);
+    (modulo(i, 5) = 0) => sum-multiples-of-3-5((i + 1), (i + sum), limit);
+    otherwise => sum-multiples-of-3-5((i + 1), sum, limit);
   end case
+end method;
+
+// Let's try something more general and more fuctional
+define method sum-multiples-of-two-numbers(number1 :: <integer>, number2 :: <integer>, limit :: <integer>) => (sum :: <integer>)
+  reduce(method(x, y) x + y end, 0, union(range(from: number1, to: (limit - 1), by: number1), range(from: number2, to: (limit - 1), by: number2)));
+  //Same code, but slightly better to read:
+  /*
+  let r = range(from: number1, to: (limit - 1), by: number1);
+  let r2 = range(from: number2, to: (limit - 1), by: number2);
+  reduce(method(x, y) x + y end, 0, union(r, r2));
+  */
 end method;
 
 main(application-name(), application-arguments());
