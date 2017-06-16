@@ -1,0 +1,6 @@
+[package]
+name = "problem002"
+version = "0.1.0"
+authors = ["Stefan Thesing <software@webdings.de>"]
+
+[dependencies]
