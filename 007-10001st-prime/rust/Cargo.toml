@@ -1,0 +1,10 @@
+[package]
+name = "problem007"
+version = "0.1.0"
+authors = ["Stefan Thesing <software@webdings.de>"]
+
+[dependencies]
+
+[[bin]]
+doc = false
+name = "problem007"
