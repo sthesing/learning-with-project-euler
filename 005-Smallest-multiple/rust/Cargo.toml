@@ -1,0 +1,11 @@
+[package]
+name = "problem005"
+version = "0.1.0"
+authors = ["Stefan Thesing <software@webdings.de>"]
+license = "WTFPL"
+
+[dependencies]
+
+[[bin]]
+doc = false
+name = "problem005"
